@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Em Público 2026 · XI Encontro Mineiro dos Estudantes do Campo de Públicas</title>
+<meta name="description" content="XI Encontro Mineiro dos Estudantes do Campo de Públicas · 06, 07 e 08 de novembro de 2026 · Fundação João Pinheiro, Belo Horizonte.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700;800;900&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#E8FDFF}
+a{color:#005A6E}a:hover{color:#003139}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+.wrap{max-width:1680px;margin:0 auto;padding:0 clamp(20px,5vw,96px)}
+.ls{font-family:'League Spartan',sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;border-radius:10px;font-family:'League Spartan',sans-serif;font-weight:800;font-size:18px;text-decoration:none;letter-spacing:.02em;transition:transform .25s,background .25s,color .25s,box-shadow .25s;border:0;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,.tab:focus-visible,.pbtn:focus-visible,.gtb:focus-visible,.faqb:focus-visible,a:focus-visible{outline:2px solid #4FD9EC;outline-offset:3px}
+.arw{display:inline-block;transition:transform .25s}
+.btn:hover .arw,a:hover>.arw{transform:translateX(4px)}
+.btn-cyan{background:#4FD9EC;color:#003139}.btn-cyan:hover{background:#fff;color:#003139;box-shadow:0 12px 30px rgba(79,217,236,.35)}
+.btn-ghost{border:2px solid #4FD9EC;color:#4FD9EC;background:transparent}.btn-ghost:hover{background:#4FD9EC;color:#003139}
+.btn-dark{background:#005A6E;color:#fff}.btn-dark:hover{background:#003139;color:#fff}
+.navl{color:#ACEAEE;text-decoration:none;font-weight:600;font-size:15px;background:linear-gradient(#4FD9EC,#4FD9EC) 0 100%/0 2px no-repeat;padding-bottom:3px;transition:background-size .3s,color .2s}.navl:hover{color:#fff;background-size:100% 2px}
+
+/* hero */
+.hero{height:100vh;height:100svh;min-height:560px;position:relative;overflow:hidden;background:#003139;color:#fff;display:flex;flex-direction:column}
+.hero-grid{flex:1;min-height:0;display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(32px,5vw,96px);align-items:center;padding-top:clamp(4px,1.5vh,24px);padding-bottom:clamp(40px,8vh,96px)}
+.hero-h1{font-size:clamp(56px,min(10vw,14.5vh),190px) !important}
+.hero-logo svg{display:block;max-height:64vh;margin-left:auto}
+.cd-box{padding:clamp(6px,1.2vh,12px) clamp(10px,1vw,16px) !important}
+.cd-box .ls{font-size:clamp(24px,4.2vh,40px) !important}
+.hs1{margin-top:clamp(10px,2.4vh,26px) !important}
+.hs2{margin-top:clamp(10px,2.6vh,28px) !important}
+.hs3{margin-top:clamp(12px,3vh,30px) !important}
+.hs3 .btn{min-height:clamp(44px,6vh,54px)}
+@media (max-height:760px){.scroll-wrap{display:none !important}}
+.tri{animation:fadeIn 1s ease-out .3s both}
+.tri polygon{transition:opacity .3s}
+.tri:hover polygon{opacity:.55}.tri polygon:hover{opacity:1}
+.h-line{display:block;overflow:hidden;padding-top:.16em;margin-top:-.16em}
+.h-line>span{display:block;animation:lineUp .8s cubic-bezier(.2,.8,.2,1) both}
+@keyframes lineUp{from{transform:translateY(105%)}to{transform:none}}
+.fade-in{animation:fadeIn 1s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.cd-num{display:block;overflow:hidden;line-height:1.05}
+.cd-num>span{display:inline-block}
+.ta{animation:rollA .35s ease-out}
+.tb{animation:rollB .35s ease-out}
+@keyframes rollA{from{transform:translateY(25%);opacity:0}to{transform:none;opacity:1}}
+@keyframes rollB{from{transform:translateY(25%);opacity:0}to{transform:none;opacity:1}}
+.cd-box{position:relative;overflow:hidden}
+.cd-bar{display:none}
+.cd-sep{align-self:center;color:#4FD9EC;font-family:'League Spartan',sans-serif;font-weight:700;font-size:24px;opacity:.35}
+
+/* scroll details */
+.kick{display:flex;align-items:center;gap:12px}
+.kick::before{content:'';display:block;height:2px;width:28px;background:currentColor;flex:none}
+.anim .kick::before{width:0;transition:width .8s cubic-bezier(.2,.8,.2,1) .15s}
+.anim .kick.in::before{width:28px}
+.anim .coc img,.anim .spc{transition:opacity .6s}
+.anim .rv .coc img{opacity:.0}
+.anim .rv.in .coc img{opacity:1;transition-delay:.2s}
+@media (max-width:900px){.cd-sep{display:none}}
+.cd{display:flex;gap:14px;flex-wrap:wrap}
+.cd-box{background:rgba(79,217,236,.1);border:1px solid rgba(79,217,236,.35);border-radius:10px;padding:12px 16px;min-width:84px;text-align:center}
+.bgtri{position:absolute;inset:0;pointer-events:none;opacity:.07}
+.scroll-cue{width:28px;height:44px;border:2px solid #4FD9EC;border-radius:14px;position:relative}
+.scroll-cue::after{content:'';position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:#4FD9EC;animation:cue 1.6s infinite}
+@keyframes cue{0%{opacity:0;transform:translateY(0)}40%{opacity:1}100%{opacity:0;transform:translateY(14px)}}
+
+/* intro */
+.intro{position:fixed;inset:0;z-index:100;background:#003139;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:opacity .7s ease,visibility .7s}
+.intro.out{opacity:0;visibility:hidden}
+.ilogo{width:min(240px,52vw);overflow:visible;transition:transform .8s cubic-bezier(.6,0,.2,1)}
+.intro.out .ilogo{transform:scale(1.12)}
+.ilogo polygon{fill-opacity:0;stroke:#4FD9EC;stroke-width:.05;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw .7s ease-out forwards,fillIn .6s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fillIn{to{fill-opacity:1;stroke-opacity:0}}
+.ilogo polygon:nth-child(1){animation-delay:0.00s,1.25s}.ilogo polygon:nth-child(2){animation-delay:0.04s,1.28s}.ilogo polygon:nth-child(3){animation-delay:0.09s,1.32s}.ilogo polygon:nth-child(4){animation-delay:0.14s,1.35s}.ilogo polygon:nth-child(5){animation-delay:0.18s,1.39s}.ilogo polygon:nth-child(6){animation-delay:0.22s,1.43s}.ilogo polygon:nth-child(7){animation-delay:0.27s,1.46s}.ilogo polygon:nth-child(8){animation-delay:0.32s,1.50s}.ilogo polygon:nth-child(9){animation-delay:0.36s,1.53s}.ilogo polygon:nth-child(10){animation-delay:0.40s,1.56s}.ilogo polygon:nth-child(11){animation-delay:0.45s,1.60s}.ilogo polygon:nth-child(12){animation-delay:0.49s,1.64s}.ilogo polygon:nth-child(13){animation-delay:0.54s,1.67s}.ilogo polygon:nth-child(14){animation-delay:0.58s,1.71s}.ilogo polygon:nth-child(15){animation-delay:0.63s,1.74s}.ilogo polygon:nth-child(16){animation-delay:0.67s,1.77s}.ilogo polygon:nth-child(17){animation-delay:0.72s,1.81s}.ilogo polygon:nth-child(18){animation-delay:0.77s,1.85s}.ilogo polygon:nth-child(19){animation-delay:0.81s,1.88s}.ilogo polygon:nth-child(20){animation-delay:0.85s,1.92s}.ilogo polygon:nth-child(21){animation-delay:0.90s,1.95s}.ilogo polygon:nth-child(22){animation-delay:0.94s,1.99s}.ilogo polygon:nth-child(23){animation-delay:0.99s,2.02s}.ilogo polygon:nth-child(24){animation-delay:1.03s,2.06s}.ilogo polygon:nth-child(25){animation-delay:1.08s,2.09s}
+.itxt{animation:itxt .9s cubic-bezier(.2,.8,.2,1) 2.15s both}
+@keyframes itxt{from{opacity:0;letter-spacing:.5em}to{opacity:1;letter-spacing:.08em}}
+.isub{animation:fadeIn .7s ease-out 2.5s both}
+.iskip{position:absolute;bottom:28px;right:28px;min-height:44px;padding:0 18px;border-radius:10px;border:1px solid rgba(172,234,238,.4);background:transparent;color:#ACEAEE;font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;cursor:pointer;transition:background .2s,color .2s}
+.iskip:hover{background:#ACEAEE;color:#003139}
+.intro-run,.intro-run body{overflow:hidden}
+.intro-run .hero *{animation-play-state:paused !important}
+
+/* palestrantes */
+.car{display:flex;gap:18px;overflow-x:auto;scroll-behavior:auto;padding:4px 4px 24px;margin:0 -4px;scrollbar-width:none;overscroll-behavior-x:contain}
+.car::-webkit-scrollbar{display:none}
+.sp-sec{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:clamp(32px,6vh,80px) 0 !important}
+.sp-h2{font-size:clamp(40px,min(5.5vw,8vh),80px) !important}
+.sp-head{margin-bottom:clamp(14px,3vh,40px) !important}
+.sp-chips{margin-bottom:clamp(12px,2.6vh,32px) !important}
+.spk{flex:0 0 clamp(190px,min(20vw,calc(100vh - 520px)),300px);scroll-snap-align:start;display:flex;flex-direction:column;border-radius:14px;overflow:hidden;background:#02464F;border:1px solid rgba(172,234,238,.12);transition:border-color .35s,transform .35s;animation:openIn .45s ease-out both}
+.spk:hover{border-color:rgba(79,217,236,.6);transform:translateY(-3px)}
+.av{position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;font-family:'League Spartan',sans-serif;font-weight:900;font-size:clamp(52px,4.5vw,72px);overflow:hidden}
+.av::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,49,57,.85),rgba(0,49,57,0) 45%);pointer-events:none}
+.av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.spk:hover .av img{transform:scale(1.04)}
+.av-tag{position:absolute;left:16px;bottom:12px;z-index:2;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;color:#4FD9EC}
+.spk.hl{border-color:#4FD9EC;box-shadow:0 0 0 3px rgba(79,217,236,.35)}
+.spc{width:100%;text-align:left;border:0;cursor:pointer;font:inherit;color:inherit;display:block}
+.spc .go{display:inline-block;margin-top:6px;font-size:12px;font-weight:700;color:#00A3B3;letter-spacing:.06em;opacity:0;transform:translateX(-4px);transition:opacity .25s,transform .25s}
+.spc:hover .go,.spc:focus-visible .go{opacity:1;transform:none}
+.car-btn{width:52px;height:52px;border-radius:10px;border:1px solid rgba(172,234,238,.4);background:transparent;color:#fff;font-size:20px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s,color .2s}
+.car-btn:hover{background:#4FD9EC;border-color:#4FD9EC;color:#003139}
+.car-bar{height:2px;background:rgba(172,234,238,.18);border-radius:2px;overflow:hidden;flex:1;min-width:80px}
+.car-bar>span{display:block;height:100%;background:#4FD9EC;transition:width .4s ease}
+.chip{min-height:44px;padding:0 18px;border-radius:10px;border:1px solid rgba(172,234,238,.35);background:transparent;color:#ACEAEE;font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.chip:hover{border-color:#4FD9EC;color:#fff}
+.chip.on{background:#4FD9EC;border-color:#4FD9EC;color:#003139}
+
+/* fundo ingressos */
+.ing-bg{position:relative;isolation:isolate}
+.ing-bg::before{content:'';position:absolute;inset:0;z-index:-2;background:url(images/auditorio.jpg) center 40%/cover no-repeat;background-attachment:fixed;filter:grayscale(1) contrast(1.1) blur(1.5px);opacity:.55}
+.ing-bg::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,49,57,.92) 0%,rgba(0,90,110,.72) 45%,rgba(0,49,57,.95) 100%);mix-blend-mode:normal}
+@media (max-width:900px){.ing-bg::before{background-attachment:scroll}}
+
+/* marquee */
+.mq{overflow:hidden;background:#02646C;color:#ACEAEE;white-space:nowrap;position:relative;z-index:3}
+.mq:hover .mq-track{animation-play-state:paused}
+.mq-track{display:inline-flex;gap:36px;padding:12px 0;animation:mq 60s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* reveal */
+.anim .rv{opacity:0;transform:translateY(12px);transition:opacity .8s ease-out,transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--d,0)*70ms)}
+.anim .rv-l{transform:translateX(-14px)}
+.anim .rv-r{transform:translateX(14px)}
+.anim .rv-s{transform:scale(.98)}
+.anim .rv.in{opacity:1;transform:none}
+
+/* tabs & accordions */
+.tabs{display:flex;gap:10px;flex-wrap:wrap}
+.tab{min-height:56px;padding:0 24px;border-radius:10px;border:2px solid #005A6E;background:transparent;color:#005A6E;font-family:'League Spartan',sans-serif;font-weight:800;font-size:18px;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.tab:hover{background:#E8FDFF}.tab.on:hover{background:#005A6E}
+.tab.on{background:#005A6E;color:#fff}
+.slot{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:22px 12px;margin:0 -12px;border-top:1px solid #CBE4E7;align-items:start;border-radius:10px;transition:background .25s}
+.slot:hover{background:#F3FEFF}
+.slot-t{position:relative;padding-left:16px}
+.slot-t::before{content:'';position:absolute;left:0;top:.5em;width:8px;height:7px;clip-path:polygon(50% 0,100% 100%,0 100%);background:#93CDD3;transition:background .25s,transform .25s}
+.slot:hover .slot-t::before{background:#00A3B3;transform:scale(1.4)}
+.pbtn{margin-top:12px;min-height:44px;padding:0 18px;border-radius:10px;border:1.5px solid #00A3B3;background:#fff;color:#005A6E;font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.pbtn:hover{background:#E8FDFF}
+.chev{display:inline-block;transition:transform .3s}
+.chev.up{transform:rotate(180deg)}
+.open-in{animation:openIn .45s cubic-bezier(.2,.8,.2,1) both}
+@keyframes openIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.day-in{animation:dayIn .55s cubic-bezier(.2,.8,.2,1) both}
+@keyframes dayIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.spc{transition:transform .25s,box-shadow .25s}.spc:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,90,110,.1)}
+.coc{transition:transform .3s,box-shadow .3s}.coc:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,90,110,.1)}
+.coc img{transition:border-color .3s}.coc:hover img{border-color:#00A3B3}
+.kw{transition:background .2s}.kw:hover{background:#93CDD3}
+.rule{transition:background .3s}.rule:hover{background:rgba(255,255,255,.14)}
+.sp{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:12px;margin-top:14px}
+.gtb{width:100%;display:flex;align-items:center;gap:20px;text-align:left;background:transparent;border:0;padding:28px 0;cursor:pointer;color:#003139}
+.gtb:hover .gtn{color:#00A3B3}
+.gtn{transition:color .25s}
+.coords{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:16px}
+.faqb{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;text-align:left;background:transparent;border:0;padding:24px 0;cursor:pointer;font-family:'League Spartan',sans-serif;font-weight:700;font-size:22px;color:#003139;min-height:56px}
+.plus{flex:none;width:36px;height:36px;border-radius:10px;background:#005A6E;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:22px;transition:transform .35s}
+.plus.x{transform:rotate(45deg);background:#00A3B3}
+
+/* ticket */
+.ticket{display:grid;grid-template-columns:230px 1fr 150px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s}
+.ticket:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.3)}
+.bars{transition:opacity .3s}.ticket:hover .bars{opacity:.7}
+.bars{height:100%;min-height:170px;background:repeating-linear-gradient(0deg,#003139 0 3px,transparent 3px 6px,#003139 6px 7px,transparent 7px 11px)}
+
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:16px}
+.mcta{display:none}
+.progress{position:fixed;top:0;left:0;height:2px;width:100%;background:#4FD9EC;transform-origin:0 50%;transform:scaleX(0);z-index:60}
+
+@media (max-width:900px){
+.sp-sec{min-height:0}
+.spk{flex-basis:75vw !important}
+.hero{height:auto;min-height:100svh}
+.hero-h1{font-size:76px !important}
+.hero-logo svg{max-height:none;margin:0}
+.hero-grid{grid-template-columns:1fr;gap:8px;padding-top:8px}
+.hero-logo{order:-1;max-width:150px !important}
+.hide-m{display:none !important}
+.g2{grid-template-columns:1fr}
+.ticket{grid-template-columns:1fr;transform:none}
+.bars-wrap{display:none}
+.slot{grid-template-columns:1fr;gap:4px}
+.wrap{padding:0 20px}
+.t-xxl{font-size:76px !important}
+.t-xl{font-size:56px !important}
+.t-l{font-size:44px !important}
+.cd-box{min-width:68px;padding:10px 10px}
+.mcta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .35s,transform .35s}
+.past-hero .mcta{opacity:1;transform:none;pointer-events:auto}
+.hero-logo{display:none !important}
+.hero-grid{padding-bottom:56px !important}
+.hs3{margin-top:24px !important}
+.mcta a{flex:1}
+.faqb{font-size:19px}
+}
+@media (prefers-reduced-motion:reduce){
+*,*::before,*::after{animation:none !important;transition:none !important}
+.anim .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<template id="dc-template">
+
+<div style="width: 100%; background: #E8FDFF; color: #003139; font-family: 'Montserrat', sans-serif; font-size: 17px; line-height: 1.6; overflow-x: hidden">
+
+<div class="progress" data-progress="1" aria-hidden="true"></div>
+
+<sc-if value="{{ intro }}" hint-placeholder-val="{{ false }}">
+<div class="intro {{ introCls }}" aria-hidden="{{ introHidden }}">
+<svg class="ilogo" viewBox="-0.2 -0.2 10.4 9.06" role="img" aria-label="Logo Em Público">
+<polygon pathLength="1" points="4,1.73 5,0.00 6,1.73" fill="#00A3B3"></polygon>
+<polygon pathLength="1" points="3,3.46 4,1.73 5,3.46" fill="#00A3B3"></polygon>
+<polygon pathLength="1" points="4,1.73 6,1.73 5,3.46" fill="#4FD9EC"></polygon>
+<polygon pathLength="1" points="5,3.46 6,1.73 7,3.46" fill="#00A3B3"></polygon>
+<polygon pathLength="1" points="2,5.20 3,3.46 4,5.20" fill="#00A3B3"></polygon>
+<polygon pathLength="1" points="3,3.46 5,3.46 4,5.20" fill="#B8F0FA"></polygon>
+<polygon pathLength="1" points="4,5.20 5,3.46 6,5.20" fill="#02646C"></polygon>
+<polygon pathLength="1" points="5,3.46 7,3.46 6,5.20" fill="#4FD9EC"></polygon>
+<polygon pathLength="1" points="6,5.20 7,3.46 8,5.20" fill="#00A3B3"></polygon>
+<polygon pathLength="1" points="1,6.93 2,5.20 3,6.93" fill="#00A3B3"></polygon>
+<polygon pathLength="1" points="2,5.20 4,5.20 3,6.93" fill="#4FD9EC"></polygon>
+<polygon pathLength="1" points="3,6.93 4,5.20 5,6.93" fill="#02646C"></polygon>
+<polygon pathLength="1" points="4,5.20 6,5.20 5,6.93" fill="#B8F0FA"></polygon>
+<polygon pathLength="1" points="5,6.93 6,5.20 7,6.93" fill="#02646C"></polygon>
+<polygon pathLength="1" points="6,5.20 8,5.20 7,6.93" fill="#4FD9EC"></polygon>
+<polygon pathLength="1" points="7,6.93 8,5.20 9,6.93" fill="#00A3B3"></polygon>
+<polygon pathLength="1" points="0,8.66 1,6.93 2,8.66" fill="#00A3B3"></polygon>
+<polygon pathLength="1" points="1,6.93 3,6.93 2,8.66" fill="#B8F0FA"></polygon>
+<polygon pathLength="1" points="2,8.66 3,6.93 4,8.66" fill="#02646C"></polygon>
+<polygon pathLength="1" points="3,6.93 5,6.93 4,8.66" fill="#4FD9EC"></polygon>
+<polygon pathLength="1" points="4,8.66 5,6.93 6,8.66" fill="#02646C"></polygon>
+<polygon pathLength="1" points="5,6.93 7,6.93 6,8.66" fill="#B8F0FA"></polygon>
+<polygon pathLength="1" points="6,8.66 7,6.93 8,8.66" fill="#02646C"></polygon>
+<polygon pathLength="1" points="7,6.93 9,6.93 8,8.66" fill="#4FD9EC"></polygon>
+<polygon pathLength="1" points="8,8.66 9,6.93 10,8.66" fill="#00A3B3"></polygon>
+</svg>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center">
+<span class="ls itxt" style="font-weight: 800; font-size: 34px; color: #fff">EM PÚBLICO</span>
+<span class="isub" style="font-weight: 600; font-size: 13px; letter-spacing: .14em; color: #4FD9EC">XI ENCONTRO MINEIRO · 2026</span>
+</div>
+<button class="iskip" onClick="{{ skipIntro }}">Pular intro</button>
+</div>
+</sc-if>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+<svg class="bgtri" data-par="0.06" width="100%" height="100%" aria-hidden="true"><defs><pattern id="tp" width="80" height="69.28" patternUnits="userSpaceOnUse"><polygon points="0,69.28 40,0 80,69.28" fill="none" stroke="#4FD9EC" stroke-width="1.5"></polygon></pattern></defs><rect width="100%" height="100%" fill="url(#tp)"></rect></svg>
+
+<header class="wrap" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 84px; position: relative; z-index: 5">
+<a href="#inicio" style="display: flex; align-items: center; gap: 12px; text-decoration: none">
+<svg width="42" height="36" viewBox="0 0 10 8.66" aria-hidden="true"><polygon points="4,1.73 5,0 6,1.73" fill="#00A3B3"></polygon><polygon points="3,3.46 4,1.73 5,3.46" fill="#00A3B3"></polygon><polygon points="5,3.46 6,1.73 7,3.46" fill="#00A3B3"></polygon><polygon points="4,1.73 6,1.73 5,3.46" fill="#4FD9EC"></polygon><polygon points="2,5.2 3,3.46 4,5.2" fill="#00A3B3"></polygon><polygon points="4,5.2 5,3.46 6,5.2" fill="#ACEAEE"></polygon><polygon points="6,5.2 7,3.46 8,5.2" fill="#00A3B3"></polygon><polygon points="1,6.93 2,5.2 3,6.93" fill="#00A3B3"></polygon><polygon points="3,6.93 4,5.2 5,6.93" fill="#ACEAEE"></polygon><polygon points="5,6.93 6,5.2 7,6.93" fill="#ACEAEE"></polygon><polygon points="7,6.93 8,5.2 9,6.93" fill="#00A3B3"></polygon><polygon points="0,8.66 1,6.93 2,8.66" fill="#00A3B3"></polygon><polygon points="2,8.66 3,6.93 4,8.66" fill="#ACEAEE"></polygon><polygon points="4,8.66 5,6.93 6,8.66" fill="#ACEAEE"></polygon><polygon points="6,8.66 7,6.93 8,8.66" fill="#ACEAEE"></polygon><polygon points="8,8.66 9,6.93 10,8.66" fill="#00A3B3"></polygon></svg>
+<span class="ls" style="font-weight: 800; font-size: 20px; color: #fff; letter-spacing: .03em">EM PÚBLICO</span>
+</a>
+<nav class="hide-m" style="display: flex; gap: 28px; align-items: center">
+<a class="navl" href="#palestrantes">Palestrantes</a>
+<a class="navl" href="#programacao">Programação</a>
+<a class="navl" href="#gts">GTs</a>
+<a class="navl" href="#submissao">Submissão</a>
+<a class="navl" href="#local">Local</a>
+<a class="navl" href="#faq">Dúvidas</a>
+</nav>
+<a class="btn btn-cyan hide-m" href="https://cheers.com.br/evento/xi-empublico-35265" style="min-height: 46px; font-size: 16px; padding: 0 22px">Ingressos</a>
+</header>
+
+<div class="wrap hero-grid" style="width: 100%; position: relative; z-index: 2">
+<div>
+<p class="fade-in" style="margin: 0 0 18px; font-weight: 700; font-size: 14px; color: #4FD9EC; letter-spacing: .14em; text-transform: uppercase; animation-delay: .1s">XI Encontro Mineiro dos Estudantes do Campo de Públicas</p>
+<h1 class="ls hero-h1" style="margin: 0; font-weight: 900; font-size: clamp(76px, 10.5vw, 200px); line-height: .86; color: #fff">
+<span class="h-line"><span style="animation-delay: .2s">EM</span></span>
+<span class="h-line"><span style="animation-delay: .35s">PÚBLICO</span></span>
+<span class="h-line"><span style="animation-delay: .5s; color: #4FD9EC">2026</span></span>
+</h1>
+<div class="fade-in hs1" style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; margin-top: 26px; animation-delay: .8s">
+<span class="ls" style="font-weight: 800; font-size: 30px; color: #fff">06 · 07 · 08 NOV</span>
+<span style="font-weight: 600; color: #ACEAEE">Fundação João Pinheiro · Belo Horizonte</span>
+</div>
+<div class="fade-in hs2" style="margin-top: 28px; animation-delay: 1s">
+<sc-if value="{{ cd.live }}" hint-placeholder-val="{{ true }}">
+<div class="cd" aria-label="Contagem regressiva para o evento">
+<div class="cd-box"><div class="ls cd-num" style="font-weight: 800; font-size: 40px"><span class="{{ cd.dc }}">{{ cd.d }}</span></div><div style="font-size: 12px; font-weight: 700; color: #ACEAEE; letter-spacing: .1em">DIAS</div></div>
+<span class="cd-sep" aria-hidden="true">:</span>
+<div class="cd-box"><div class="ls cd-num" style="font-weight: 800; font-size: 40px"><span class="{{ cd.hc }}">{{ cd.h }}</span></div><div style="font-size: 12px; font-weight: 700; color: #ACEAEE; letter-spacing: .1em">HORAS</div></div>
+<span class="cd-sep" aria-hidden="true">:</span>
+<div class="cd-box"><div class="ls cd-num" style="font-weight: 800; font-size: 40px"><span class="{{ cd.mc }}">{{ cd.m }}</span></div><div style="font-size: 12px; font-weight: 700; color: #ACEAEE; letter-spacing: .1em">MIN</div></div>
+<span class="cd-sep" aria-hidden="true">:</span>
+<div class="cd-box"><div class="ls cd-num" style="font-weight: 800; font-size: 40px; color: #4FD9EC"><span class="{{ cd.sc }}">{{ cd.s }}</span></div><div style="font-size: 12px; font-weight: 700; color: #ACEAEE; letter-spacing: .1em">SEG</div><span class="cd-bar {{ cd.bc }}" aria-hidden="true"></span></div>
+</div>
+</sc-if>
+<sc-if value="{{ cd.over }}" hint-placeholder-val="{{ false }}">
+<p class="ls" style="margin: 0; font-weight: 800; font-size: 28px; color: #4FD9EC">{{ cd.msg }}</p>
+</sc-if>
+</div>
+<div class="fade-in hs3" style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; animation-delay: 1.15s">
+<a class="btn btn-cyan" href="https://cheers.com.br/evento/xi-empublico-35265">Garanta seu ingresso</a>
+<a class="btn btn-ghost" href="#programacao">Ver programação</a>
+</div>
+</div>
+<div class="hero-logo" style="max-width: 680px; width: 100%; min-width: 0; justify-self: end">
+<svg class="tri" width="100%" viewBox="-0.2 -0.2 10.4 9.06" role="img" aria-label="Logo Em Público">
+<polygon points="4,1.73 5,0 6,1.73" fill="#00A3B3"></polygon>
+<polygon points="3,3.46 4,1.73 5,3.46" fill="#00A3B3"></polygon>
+<polygon points="4,1.73 6,1.73 5,3.46" fill="#4FD9EC"></polygon>
+<polygon points="5,3.46 6,1.73 7,3.46" fill="#00A3B3"></polygon>
+<polygon points="2,5.2 3,3.46 4,5.2" fill="#00A3B3"></polygon>
+<polygon points="3,3.46 5,3.46 4,5.2" fill="#B8F0FA"></polygon>
+<polygon points="4,5.2 5,3.46 6,5.2" fill="#02646C"></polygon>
+<polygon points="5,3.46 7,3.46 6,5.2" fill="#4FD9EC"></polygon>
+<polygon points="6,5.2 7,3.46 8,5.2" fill="#00A3B3"></polygon>
+<polygon points="1,6.93 2,5.2 3,6.93" fill="#00A3B3"></polygon>
+<polygon points="2,5.2 4,5.2 3,6.93" fill="#4FD9EC"></polygon>
+<polygon points="3,6.93 4,5.2 5,6.93" fill="#02646C"></polygon>
+<polygon points="4,5.2 6,5.2 5,6.93" fill="#B8F0FA"></polygon>
+<polygon points="5,6.93 6,5.2 7,6.93" fill="#02646C"></polygon>
+<polygon points="6,5.2 8,5.2 7,6.93" fill="#4FD9EC"></polygon>
+<polygon points="7,6.93 8,5.2 9,6.93" fill="#00A3B3"></polygon>
+<polygon points="0,8.66 1,6.93 2,8.66" fill="#00A3B3"></polygon>
+<polygon points="1,6.93 3,6.93 2,8.66" fill="#B8F0FA"></polygon>
+<polygon points="2,8.66 3,6.93 4,8.66" fill="#02646C"></polygon>
+<polygon points="3,6.93 5,6.93 4,8.66" fill="#4FD9EC"></polygon>
+<polygon points="4,8.66 5,6.93 6,8.66" fill="#02646C"></polygon>
+<polygon points="5,6.93 7,6.93 6,8.66" fill="#B8F0FA"></polygon>
+<polygon points="6,8.66 7,6.93 8,8.66" fill="#02646C"></polygon>
+<polygon points="7,6.93 9,6.93 8,8.66" fill="#4FD9EC"></polygon>
+<polygon points="8,8.66 9,6.93 10,8.66" fill="#00A3B3"></polygon>
+</svg>
+</div>
+</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq" aria-hidden="true">
+<div class="mq-track ls" style="font-weight: 700; font-size: 17px; letter-spacing: .12em">
+<span>POLARIZAÇÃO</span><span>▲</span><span>ORÇAMENTO</span><span>▲</span><span>DEMOCRACIA DIGITAL</span><span>▲</span><span>FAKE NEWS</span><span>▲</span><span>TRANSPARÊNCIA</span><span>▲</span><span>PARTICIPAÇÃO</span><span>▲</span>
+<span>POLARIZAÇÃO</span><span>▲</span><span>ORÇAMENTO</span><span>▲</span><span>DEMOCRACIA DIGITAL</span><span>▲</span><span>FAKE NEWS</span><span>▲</span><span>TRANSPARÊNCIA</span><span>▲</span><span>PARTICIPAÇÃO</span><span>▲</span>
+</div>
+</div>
+
+<!-- DEADLINE -->
+<section style="padding: 72px 0 0">
+<div class="wrap">
+<a href="#submissao" class="rv" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; background: #fff; border: 2px solid #00A3B3; border-radius: 14px; padding: 22px 28px; text-decoration: none; color: #003139">
+<span style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap">
+<span style="background: #005A6E; color: #fff; border-radius: 10px; padding: 6px 14px; font-weight: 700; font-size: 13px; letter-spacing: .08em">{{ dl.tag }}</span>
+<span class="ls" style="font-weight: 800; font-size: 22px">{{ dl.title }}</span>
+</span>
+<span style="font-weight: 700; color: #005A6E">{{ dl.sub }} <span class="arw">→</span></span>
+</a>
+</div>
+</section>
+
+<!-- SOBRE / 30H -->
+<section id="sobre" style="padding: 112px 0">
+<div class="wrap g2" style="align-items: center; gap: 56px">
+<div>
+<h2 class="ls t-xl" style="margin: 0; font-weight: 900; font-size: 96px; line-height: .92; color: #003139"><span class="rv rv-l" style="display: block">Ainda</span><span class="rv rv-l" style="display: block; --d: 1">não sabe?</span></h2>
+<p class="ls rv" style="margin: 24px 0 0; font-weight: 700; font-size: 30px; line-height: 1.2; color: #02646C; --d: 2">O Em Público 2026 trará discussões importantíssimas para o nosso cenário atual.</p>
+<p class="rv" style="margin: 18px 0 0; max-width: 520px; --d: 3">O maior evento acadêmico do Campo de Públicas de Minas Gerais: três dias de painéis, grupos de trabalho e integração na Fundação João Pinheiro.</p>
+</div>
+<div class="rv rv-s" data-count="1" style="background: #005A6E; color: #fff; border-radius: 14px; padding: 48px; position: relative; overflow: hidden">
+<svg data-par="-0.08" width="260" viewBox="0 0 10 8.66" style="position: absolute; right: -50px; bottom: -40px; opacity: .14" aria-hidden="true"><polygon points="0,8.66 5,0 10,8.66" fill="#4FD9EC"></polygon></svg>
+<p class="ls" style="margin: 0; font-weight: 700; font-size: 26px; color: #ACEAEE">Além do conhecimento, você ganhará</p>
+<div style="display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap">
+<span class="ls" style="font-weight: 900; font-size: 180px; line-height: 1; color: #fff">{{ hours }}</span>
+<span class="ls" style="font-weight: 900; font-size: 72px; line-height: 1; color: #4FD9EC">horas</span>
+</div>
+<p class="ls" style="margin: 8px 0 0; font-weight: 700; font-size: 26px">de Atividades Complementares!</p>
+</div>
+</div>
+</section>
+
+<!-- PALESTRANTES -->
+<section id="palestrantes" class="sp-sec" style="padding: 112px 0; background: #003139; color: #fff">
+<div class="wrap" style="width: 100%">
+<div class="g2 sp-head" style="align-items: end; margin-bottom: 40px">
+<div>
+<p class="rv kick" style="margin: 0; font-weight: 700; letter-spacing: .14em; color: #4FD9EC; font-size: 14px">PALESTRANTES CONFIRMADOS</p>
+<h2 class="ls t-l rv sp-h2" style="margin: 8px 0 0; font-weight: 900; font-size: 80px; line-height: 1; color: #fff; --d: 1">Quem sobe ao palco</h2>
+</div>
+<p class="rv" style="margin: 0; color: #ACEAEE; max-width: 520px; --d: 2">Parlamentares, gestores, pesquisadores e representantes da sociedade civil em 7 painéis ao longo dos três dias.</p>
+</div>
+<div class="rv sp-chips" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; --d: 3" role="group" aria-label="Filtrar por painel">
+<sc-for list="{{ spFilters }}" as="fl" hint-placeholder-count="8">
+<button class="chip {{ fl.cls }}" aria-pressed="{{ fl.sel }}" onClick="{{ fl.pick }}">{{ fl.label }}</button>
+</sc-for>
+</div>
+<div class="car" data-track="1" onScroll="{{ onCarScroll }}" tabindex="0" aria-label="Carrossel de palestrantes">
+<sc-for list="{{ speakers }}" as="sp" hint-placeholder-count="4">
+<article class="spk {{ sp.cls }}" data-sp="{{ sp.id }}" onMouseEnter="{{ carPause }}" onMouseLeave="{{ carResume }}">
+<div class="av" style="{{ sp.avStyle }}">
+<sc-if value="{{ sp.noImg }}" hint-placeholder-val="{{ true }}"><span aria-hidden="true" style="opacity: .9">{{ sp.ini }}</span></sc-if>
+<sc-if value="{{ sp.img }}" hint-placeholder-val="{{ false }}"><img src="{{ sp.img }}" alt="{{ sp.n }}"></sc-if>
+<span class="av-tag">{{ sp.tag }}</span>
+</div>
+<div style="padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; flex: 1">
+<h3 class="ls" style="margin: 0; font-weight: 800; font-size: 22px; line-height: 1.15; color: #fff">{{ sp.n }}</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #ACEAEE">{{ sp.r }}</p>
+<p style="margin: auto 0 0; padding-top: 14px; border-top: 1px solid rgba(172,234,238,.14); font-size: 13px; line-height: 1.45; color: #CBE4E7">{{ sp.panel }}</p>
+</div>
+</article>
+</sc-for>
+</div>
+<div style="display: flex; align-items: center; gap: 20px; margin-top: 8px">
+<span class="ls" style="font-weight: 800; font-size: 18px; color: #fff; min-width: 70px">{{ carPos }}</span>
+<div class="car-bar" aria-hidden="true"><span style="{{ carBar }}"></span></div>
+<button class="car-btn" aria-label="Palestrante anterior" onClick="{{ carPrev }}">←</button>
+<button class="car-btn" aria-label="Próximo palestrante" onClick="{{ carNext }}">→</button>
+</div>
+</div>
+</section>
+
+<!-- PROGRAMAÇÃO -->
+<section id="programacao" style="padding: 112px 0; background: #fff">
+<div class="wrap">
+<p class="rv kick" style="margin: 0; font-weight: 700; letter-spacing: .14em; color: #02646C; font-size: 14px">PROGRAMAÇÃO</p>
+<h2 class="ls t-l rv" style="margin: 8px 0 32px; font-weight: 900; font-size: 80px; line-height: 1; color: #005A6E; --d: 1">Três dias de debate</h2>
+<div class="tabs rv" role="tablist" aria-label="Dias do evento" style="--d: 2">
+<sc-for list="{{ days }}" as="day" hint-placeholder-count="3">
+<button class="tab {{ day.cls }}" role="tab" aria-selected="{{ day.sel }}" onClick="{{ day.pick }}">{{ day.label }}</button>
+</sc-for>
+</div>
+<sc-for list="{{ shownDays }}" as="dd" hint-placeholder-count="1">
+<div class="day-in" style="margin-top: 32px">
+<div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 8px">
+<span class="ls" style="font-weight: 900; font-size: 72px; line-height: 1; color: #00A3B3">{{ dd.num }}</span>
+<span class="ls" style="font-weight: 700; font-size: 22px; color: #005A6E">{{ dd.full }}</span>
+</div>
+<sc-for list="{{ dd.slots }}" as="s" hint-placeholder-count="4">
+<div class="slot">
+<div class="ls slot-t" style="font-weight: 800; font-size: 20px; color: #02646C">{{ s.t }}</div>
+<div>
+<sc-if value="{{ s.kind }}" hint-placeholder-val="{{ true }}"><span style="display: inline-block; background: #ACEAEE; color: #003139; border-radius: 14px; padding: 2px 10px; font-weight: 700; font-size: 13px; margin-bottom: 6px">{{ s.kind }}</span></sc-if>
+<div class="ls" style="font-weight: 700; font-size: 22px; line-height: 1.25; color: #003139">{{ s.title }}</div>
+<sc-if value="{{ s.who }}" hint-placeholder-val="{{ false }}"><div style="margin-top: 4px; font-size: 15px; color: #02646C">{{ s.who }}</div></sc-if>
+<sc-if value="{{ s.hasSp }}" hint-placeholder-val="{{ false }}">
+<button class="pbtn" aria-expanded="{{ s.exp }}" onClick="{{ s.toggle }}">{{ s.btn }} <span class="chev {{ s.chev }}" aria-hidden="true">▾</span></button>
+<sc-if value="{{ s.open }}" hint-placeholder-val="{{ false }}">
+<div class="sp open-in">
+<sc-for list="{{ s.sp }}" as="p" hint-placeholder-count="2">
+<button class="spc" onClick="{{ p.go }}" style="background: #E8FDFF; border-radius: 10px; padding: 14px 16px"><div style="font-weight: 700; color: #005A6E">{{ p.n }}</div><div style="font-size: 14px; line-height: 1.45">{{ p.r }}</div><span class="go">VER PERFIL →</span></button>
+</sc-for>
+</div>
+</sc-if>
+</sc-if>
+</div>
+</div>
+</sc-for>
+</div>
+</sc-for>
+</div>
+</section>
+
+<!-- GTs -->
+<section id="gts" style="padding: 112px 0">
+<div class="wrap">
+<p class="rv kick" style="margin: 0; font-weight: 700; letter-spacing: .14em; color: #02646C; font-size: 14px">GRUPOS DE TRABALHO · DOMINGO, 08/11</p>
+<h2 class="ls t-l rv" style="margin: 8px 0 24px; font-weight: 900; font-size: 80px; line-height: 1; color: #005A6E; --d: 1">Os 4 GTs</h2>
+<div style="border-bottom: 1px solid #93CDD3">
+<sc-for list="{{ gts }}" as="g" hint-placeholder-count="4">
+<div class="rv" style="border-top: 1px solid #93CDD3">
+<button class="gtb" aria-expanded="{{ g.exp }}" onClick="{{ g.toggle }}">
+<span class="ls gtn" style="flex: none; font-weight: 900; font-size: 56px; line-height: 1; color: #005A6E; min-width: 90px">{{ g.num }}</span>
+<span style="flex: 1; min-width: 0">
+<span class="ls" style="display: block; font-weight: 700; font-size: 24px; line-height: 1.25">{{ g.title }}</span>
+<span style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px">
+<span style="font-size: 14px; font-weight: 600; color: #02646C">{{ g.when }}</span>
+<sc-if value="{{ g.badge }}" hint-placeholder-val="{{ false }}"><span style="background: #005A6E; color: #fff; border-radius: 10px; padding: 1px 12px; font-size: 13px; font-weight: 700">{{ g.badge }}</span></sc-if>
+</span>
+</span>
+<span class="plus {{ g.x }}" aria-hidden="true">+</span>
+</button>
+<sc-if value="{{ g.open }}" hint-placeholder-val="{{ false }}">
+<div class="open-in" style="padding: 0 0 36px">
+<p style="margin: 0 0 16px; max-width: 820px">{{ g.desc }}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px">
+<sc-for list="{{ g.kw }}" as="k" hint-placeholder-count="4"><span class="kw" style="background: #ACEAEE; border-radius: 6px; padding: 6px 14px; font-weight: 700; font-size: 14px">{{ k }}</span></sc-for>
+</div>
+<p class="ls" style="margin: 0 0 14px; font-weight: 800; font-size: 18px; color: #02646C; letter-spacing: .06em">COORDENAÇÃO</p>
+<div class="coords">
+<sc-for list="{{ g.co }}" as="c" hint-placeholder-count="2">
+<div class="coc" style="background: #fff; border-radius: 14px; padding: 20px; display: flex; gap: 18px; align-items: flex-start">
+<img src="{{ c.img }}" alt="{{ c.n }}" style="flex: none; width: 96px; height: 96px; border-radius: 10px; object-fit: cover; object-position: center 20%; border: 3px solid #4FD9EC">
+<div style="min-width: 0"><div class="ls" style="font-weight: 800; font-size: 21px; color: #005A6E">{{ c.n }}</div><p style="margin: 4px 0 0; font-size: 14px; line-height: 1.5">{{ c.b }}</p></div>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- SUBMISSÃO -->
+<section id="submissao" style="padding: 112px 0; background: #005A6E; color: #fff">
+<div class="wrap">
+<div class="g2" style="align-items: end">
+<div>
+<p class="rv kick" style="margin: 0; font-weight: 700; letter-spacing: .14em; color: #ACEAEE; font-size: 14px">CHAMADA DE TRABALHOS</p>
+<h2 class="ls t-xl rv" style="margin: 8px 0 0; font-weight: 900; font-size: 104px; line-height: .9; color: #4FD9EC; --d: 1">Edital aberto</h2>
+</div>
+<div class="rv" style="--d: 2">
+<p style="margin: 0; font-size: 19px">Submissão de artigos para a XI Edição do Em Público, <strong>prorrogada até 25 de outubro</strong>. Os trabalhos aprovados são apresentados nos GTs, e o melhor resumo recebe menção honrosa no encerramento.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px">
+<a class="btn btn-cyan" href="https://ugc.production.linktr.ee/f783ddd6-48d1-4951-b835-0a928edb3999_Edital-2026.pdf">Ler o edital (PDF)</a>
+<a class="btn btn-ghost" href="mailto:academico@empublico.com?subject=Submiss%C3%A3o%20de%20Resumos%20de%20Artigo%20-%20XI%20EM%20P%C3%BAblico" target="_blank" rel="noopener">Enviar trabalho <span class="arw">→</span></a>
+</div>
+<p style="margin: 14px 0 0; font-size: 14px; color: #ACEAEE">Usa Gmail no navegador? <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=academico@empublico.com&amp;su=Submiss%C3%A3o%20de%20Resumos%20de%20Artigo%20-%20XI%20EM%20P%C3%BAblico" target="_blank" rel="noopener" style="color: #4FD9EC; font-weight: 700">Abrir no Gmail</a></p>
+</div>
+</div>
+<div class="rules" style="margin-top: 56px">
+<div class="rv" style="background: rgba(255,255,255,.08); border-radius: 14px; padding: 26px"><div class="ls" style="font-weight: 900; font-size: 52px; line-height: 1; color: #4FD9EC">3</div><p style="margin: 8px 0 0">autores no máximo por trabalho; cada pessoa pode submeter até 2 vezes</p></div>
+<div class="rv" style="background: rgba(255,255,255,.08); border-radius: 14px; padding: 26px; --d: 1"><div class="ls" style="font-weight: 900; font-size: 52px; line-height: 1; color: #4FD9EC">4–8</div><p style="margin: 8px 0 0">laudas, sem contar referências; texto anônimo, sem identificar autores</p></div>
+<div class="rv" style="background: rgba(255,255,255,.08); border-radius: 14px; padding: 26px; --d: 2"><div class="ls" style="font-weight: 900; font-size: 52px; line-height: 1; color: #4FD9EC">10 min</div><p style="margin: 8px 0 0">de apresentação no GT, com PowerPoint de apoio opcional</p></div>
+<div class="rv" style="background: rgba(255,255,255,.08); border-radius: 14px; padding: 26px; min-width: 0; --d: 3"><div class="ls" style="font-weight: 900; font-size: 52px; line-height: 1; color: #4FD9EC">E-mail</div><p style="margin: 8px 0 0"><a href="mailto:academico@empublico.com?subject=Submiss%C3%A3o%20de%20Resumos%20de%20Artigo%20-%20XI%20EM%20P%C3%BAblico" target="_blank" rel="noopener" style="color: #fff; font-weight: 700; font-size: 15px; overflow-wrap: anywhere">academico@empublico.com</a><br><span style="font-size: 15px">Assunto: “Submissão de Resumos de Artigo - XI EM Público”</span></p></div>
+</div>
+</div>
+</section>
+
+<!-- INGRESSOS -->
+<section id="ingressos" class="ing-bg" style="padding: 120px 0; background: #003139; overflow: hidden">
+<div class="wrap">
+<h2 class="ls t-xl" style="margin: 0; font-weight: 900; font-size: 140px; line-height: .86"><span class="rv rv-l" style="display: block; color: #4FD9EC">VENDAS</span><span class="rv rv-r" style="display: block; color: #fff; --d: 1">ABERTAS</span></h2>
+<div class="rv" style="margin-top: 56px; --d: 2">
+<a class="ticket" href="https://cheers.com.br/evento/xi-empublico-35265" style="background: #C7F1F4; border-radius: 14px; overflow: hidden; text-decoration: none; color: #003139">
+<div style="background: #00A3B3; padding: 28px; display: flex; flex-direction: column; justify-content: center; gap: 4px">
+<span class="ls" style="font-weight: 900; font-size: 36px; line-height: 1; white-space: nowrap">06 · 07 · 08</span>
+<span style="font-weight: 700; letter-spacing: .3em">NOVEMBRO</span>
+<span style="font-weight: 600; font-size: 14px; margin-top: 8px">Fundação João Pinheiro</span>
+</div>
+<div style="padding: 36px 40px; border-right: 3px dashed #005A6E">
+<div class="ls" style="font-weight: 900; font-size: 52px; line-height: 1; color: #005A6E">EM PÚBLICO 2026</div>
+<p class="ls" style="margin: 14px 0 0; font-weight: 700; font-size: 24px; line-height: 1.2">Experiência inesquecível<br>+ 30 horas de atividade complementar</p>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-top: 26px">
+<div><span style="display: block; font-size: 14px; font-weight: 700; color: #02646C">LOTES A PARTIR DE</span><span class="ls" style="font-weight: 900; font-size: 60px; line-height: 1; color: #005A6E">R$ 20</span></div>
+<span class="btn btn-dark">Comprar na Cheers <span class="arw">→</span></span>
+</div>
+</div>
+<div class="bars-wrap" style="padding: 28px 24px" aria-hidden="true"><div class="bars"></div></div>
+</a>
+</div>
+<p class="ls rv" style="margin: 36px 0 0; font-weight: 700; font-size: 28px; color: #ACEAEE">Garanta seu ingresso. Faça parte dessa experiência!</p>
+</div>
+</section>
+
+<!-- LOCAL -->
+<section id="local" style="padding: 112px 0">
+<div class="wrap g2" style="align-items: center">
+<div>
+<p class="rv kick" style="margin: 0; font-weight: 700; letter-spacing: .14em; color: #02646C; font-size: 14px">LOCALIZAÇÃO</p>
+<h2 class="ls t-l rv" style="margin: 8px 0 24px; font-weight: 900; font-size: 76px; line-height: .95; color: #005A6E; --d: 1">Fundação João Pinheiro</h2>
+<div class="rv" style="display: flex; gap: 16px; align-items: flex-start; --d: 2">
+<svg width="32" height="40" viewBox="0 0 24 30" aria-hidden="true"><path d="M12 1C6 1 1.5 5.5 1.5 11.3 1.5 19 12 29 12 29s10.5-10 10.5-17.7C22.5 5.5 18 1 12 1z" fill="#005A6E"></path><circle cx="12" cy="11" r="4" fill="#E8FDFF"></circle></svg>
+<p style="margin: 0; font-size: 22px; line-height: 1.4">Alameda das Acácias, 70 – São Luiz<br><strong class="ls" style="letter-spacing: .08em">BELO HORIZONTE</strong></p>
+</div>
+<a class="btn btn-dark rv" href="https://www.google.com/maps/search/?api=1&amp;query=Funda%C3%A7%C3%A3o+Jo%C3%A3o+Pinheiro+Alameda+das+Ac%C3%A1cias+70+Belo+Horizonte" style="margin-top: 28px; --d: 3">Abrir no mapa</a>
+</div>
+<div class="rv rv-r" style="background: #C7F1F4; border-radius: 14px; padding: 48px; text-align: center">
+<p class="ls" style="margin: 0; font-weight: 700; font-size: 16px; color: #02646C; letter-spacing: .06em">XI ENCONTRO MINEIRO DOS ESTUDANTES DO CAMPO DE PÚBLICAS</p>
+<div class="ls" style="font-weight: 900; font-size: 64px; line-height: 1; color: #005A6E; margin-top: 16px">EM PÚBLICO</div>
+<div class="ls" style="font-weight: 900; font-size: 64px; line-height: 1; color: #0094A3">2026</div>
+<div class="ls" style="margin-top: 18px; font-weight: 800; font-size: 24px; color: #003139; letter-spacing: .1em">SEX 06 · SÁB 07 · DOM 08</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding: 112px 0; background: #fff">
+<div class="wrap" style="max-width: 1200px">
+<p class="rv kick" style="margin: 0; font-weight: 700; letter-spacing: .14em; color: #02646C; font-size: 14px">DÚVIDAS FREQUENTES</p>
+<h2 class="ls t-l rv" style="margin: 8px 0 24px; font-weight: 900; font-size: 72px; line-height: 1; color: #005A6E; --d: 1">Ficou alguma dúvida?</h2>
+<div style="border-bottom: 1px solid #CBE4E7">
+<sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
+<div class="rv" style="border-top: 1px solid #CBE4E7">
+<button class="faqb" aria-expanded="{{ f.exp }}" onClick="{{ f.toggle }}"><span>{{ f.q }}</span><span class="plus {{ f.x }}" aria-hidden="true">+</span></button>
+<sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><p class="open-in" style="margin: 0 0 24px; max-width: 760px">{{ f.a }}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #003139; color: #ACEAEE; padding: 64px 0 120px">
+<div class="wrap" style="display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<div>
+<div class="ls" style="font-weight: 900; font-size: 40px; line-height: 1; color: #fff">EM PÚBLICO 2026</div>
+<div style="font-size: 14px; margin-top: 6px">XI Encontro Mineiro dos Estudantes do Campo de Públicas</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn btn-ghost" href="https://www.instagram.com/empublico" style="min-height: 46px; font-size: 16px">@empublico</a>
+<a class="btn btn-ghost" href="mailto:academico@empublico.com" target="_blank" rel="noopener" style="min-height: 46px; font-size: 16px">academico@empublico.com</a>
+</div>
+</div>
+</footer>
+
+<div class="mcta"><a class="btn btn-cyan" href="https://cheers.com.br/evento/xi-empublico-35265" style="box-shadow: 0 10px 30px rgba(0,49,57,.4)">Garanta seu ingresso · a partir de R$ 20</a></div>
+
+</div>
+</template>
+<script src="js/preact.min.js"></script>
+<script src="js/dc-runtime.js"></script>
+<script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { spf: 0, ci: 0, hl: '', now: Date.now(), day: 0, openP: null, gt: 0, faq: -1, hours: 30, intro: true, introOut: false };
+  }
+  componentDidMount() {
+    var self = this;
+    this.timer = setInterval(function () { self.setState({ now: Date.now() }); }, 1000);
+    var reduce = false;
+    try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    var doc = document;
+    var seen = false;
+    try { seen = sessionStorage.getItem('ep-intro') === '1'; sessionStorage.setItem('ep-intro', '1'); } catch (e) {}
+    this.endIntro = function () {
+      clearTimeout(self.t1); clearTimeout(self.t2);
+      doc.documentElement.classList.remove('intro-run');
+      self.setState({ introOut: true });
+      self.t3 = setTimeout(function () { self.setState({ intro: false }); }, 750);
+    };
+    if (reduce || seen) {
+      this.state.intro = false;
+      this.setState({ intro: false });
+    } else {
+      doc.documentElement.classList.add('intro-run');
+      this.t1 = setTimeout(this.endIntro, 3400);
+    }
+    if ('IntersectionObserver' in window && !reduce) {
+      doc.documentElement.classList.add('anim');
+      this.io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            if (e.target.getAttribute('data-count')) self.countUp();
+            self.io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      this.scan = function () {
+        doc.querySelectorAll('.rv:not(.in)').forEach(function (el) { self.io.observe(el); });
+      };
+      this.scan();
+      this.mo = new MutationObserver(function () { self.scan(); });
+      this.mo.observe(doc.body, { childList: true, subtree: true });
+      var c = doc.querySelector('[data-count]');
+      if (c && c.getBoundingClientRect().top > window.innerHeight) this.setState({ hours: 0 });
+    }
+    this.onScroll = function () {
+      if (self.raf) return;
+      self.raf = requestAnimationFrame(function () {
+        self.raf = null;
+        var h = doc.documentElement.scrollHeight - window.innerHeight;
+        var y = window.scrollY || 0;
+        var bar = doc.querySelector('[data-progress]');
+        if (bar) bar.style.transform = 'scaleX(' + (h > 0 ? y / h : 0) + ')';
+        doc.documentElement.classList.toggle('past-hero', y > window.innerHeight * 0.85);
+        if (reduce) return;
+        doc.querySelectorAll('[data-par]').forEach(function (el) {
+          var r = el.getBoundingClientRect();
+          var mid = r.top + r.height / 2 - window.innerHeight / 2;
+          el.style.transform = 'translateY(' + (mid * parseFloat(el.getAttribute('data-par'))) + 'px)';
+        });
+      });
+    };
+    var last = 0;
+    var loop = function (t) {
+      self.carRaf = requestAnimationFrame(loop);
+      var dt = last ? Math.min(t - last, 50) : 16; last = t;
+      var tr = doc.querySelector('[data-track]'); if (!tr) return;
+      if (self.carPos == null) self.carPos = tr.scrollLeft;
+      if (Math.abs(tr.scrollLeft - self.carSet) > 3) { self.carPos = tr.scrollLeft; self.tweenTo = null; }
+      var half = tr.scrollWidth / 2, looped = !self.state.spf;
+      if (self.tweenTo != null) {
+        var dlt = self.tweenTo - self.carPos;
+        self.carPos += dlt * Math.min(1, dt / 120);
+        if (Math.abs(dlt) < 0.5) { self.carPos = self.tweenTo; self.tweenTo = null; }
+      } else if (!reduce && looped && !self.carPaused && !doc.hidden && !(self.holdUntil && Date.now() < self.holdUntil)) {
+        var sec = doc.getElementById('palestrantes');
+        var r = sec ? sec.getBoundingClientRect() : null;
+        if (r && r.bottom > 0 && r.top < window.innerHeight) self.carPos += dt * 0.04;
+      }
+      if (looped && half > 0) {
+        if (self.carPos >= half) { self.carPos -= half; if (self.tweenTo != null) self.tweenTo -= half; }
+        if (self.carPos < 0) { self.carPos += half; if (self.tweenTo != null) self.tweenTo += half; }
+      }
+      tr.scrollLeft = self.carPos;
+      self.carSet = tr.scrollLeft;
+    };
+    this.carRaf = requestAnimationFrame(loop);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.onScroll();
+  }
+  componentWillUnmount() {
+    clearInterval(this.timer);
+    cancelAnimationFrame(this.carRaf);
+    clearTimeout(this.t1); clearTimeout(this.t2); clearTimeout(this.t3);
+    document.documentElement.classList.remove('intro-run');
+    if (this.io) this.io.disconnect();
+    if (this.mo) this.mo.disconnect();
+    window.removeEventListener('scroll', this.onScroll);
+  }
+  countUp() {
+    if (this.counted) return;
+    this.counted = true;
+    var self = this, t0 = null;
+    function step(t) {
+      if (!t0) t0 = t;
+      var p = Math.min(1, (t - t0) / 1400);
+      self.setState({ hours: Math.round(30 * (1 - Math.pow(1 - p, 3))) });
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  renderVals() {
+    var self = this, st = this.state;
+    var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+    var start = Date.parse('2026-11-06T18:00:00-03:00');
+    var end = Date.parse('2026-11-08T18:30:00-03:00');
+    var diff = start - st.now;
+    var cd = { live: diff > 0, over: diff <= 0, d: 0, h: '00', m: '00', s: '00', msg: '' };
+    if (diff > 0) {
+      var sec = Math.floor(diff / 1000);
+      var vd = Math.floor(sec / 86400), vh = Math.floor(sec % 86400 / 3600), vm = Math.floor(sec % 3600 / 60), vs = sec % 60;
+      cd.d = vd; cd.h = pad(vh); cd.m = pad(vm); cd.s = pad(vs);
+      var par = function (n) { return n % 2 ? 'ta' : 'tb'; };
+      cd.dc = par(vd); cd.hc = par(vh); cd.mc = par(vm); cd.sc = par(vs); cd.bc = vs % 2 ? 'ba' : 'bb';
+    } else {
+      cd.msg = st.now < end ? 'Está acontecendo agora!' : 'Obrigado por fazer parte do Em Público 2026!';
+    }
+    var dlEnd = Date.parse('2026-10-25T23:59:59-03:00');
+    var left = dlEnd - st.now;
+    var dl;
+    if (left > 0) {
+      var dd = Math.floor(left / 86400000), hh = Math.floor(left % 86400000 / 3600000);
+      dl = { tag: 'PRAZO PRORROGADO', title: 'Submissões até 25/10: faltam ' + (dd > 0 ? dd + (dd === 1 ? ' dia e ' : ' dias e ') : '') + hh + 'h', sub: 'Como submeter' };
+    } else {
+      dl = { tag: 'SUBMISSÕES ENCERRADAS', title: 'Os trabalhos aprovados serão apresentados nos GTs', sub: 'Ver edital' };
+    }
+
+    var P = {
+      p1: [{ n: 'Reginaldo Lopes', r: 'Deputado Federal (PT-MG)', img: 'images/sp/reginaldo-lopes.jpg' }, { n: 'Dandara Tonantzin', r: 'Deputada Federal (PT-MG)', img: 'images/sp/dandara-tonantzin.jpg' }, { n: 'Lohanna França', r: 'Deputada Estadual (PV-MG)', img: 'images/sp/lohanna-franca.jpg' }, { n: 'Jaime Arturo Ramirez', r: 'Ex-Reitor da UFMG e presidente da Fundação de Apoio da UFMG', img: 'images/sp/jaime-arturo-ramirez.jpg' }, { n: 'Adriana Aparecida Mendonça', r: 'Vice-presidente da Comissão Estadual de Direito Sindical da OAB-MG', img: 'images/sp/adriana-aparecida-mendonca.jpg' }],
+      p2: [{ n: 'André Martins', r: 'Presidente do Sinfisco', img: 'images/sp/andre-martins.jpg' }, { n: 'Arthur Bernardo', r: 'Secretaria Municipal de Relações Institucionais (PBH)', img: 'images/sp/arthur-bernardo.jpg' }, { n: 'Leice Garcia', r: 'Observatório Social de BH', img: 'images/sp/leice-garcia.jpg' }],
+      p3: [{ n: 'Marilena Chaves', r: 'Assessora na Secretaria Municipal de Desenvolvimento Econômico, Trabalho e Relações Internacionais de BH', img: 'images/sp/marilena-chaves.jpg' }, { n: 'Txai Silva Costa', r: 'Prefeito de Nova Era', img: 'images/sp/txai-silva-costa.jpg' }, { n: 'Natalia Tsuyama', r: 'Membro do Comitê Diretivo de Jovens da CSW71 e conselheira no CRJ Belo Horizonte', img: 'images/sp/natalia-tsuyama.jpg' }],
+      p4: [{ n: 'Helton Junior', r: 'Vereador (PSD-BH)', img: 'images/sp/helton-junior.jpg' }, { n: 'Laura Farias', r: 'MPM/CMDM', img: 'images/sp/laura-farias.jpg' }, { n: 'Suzane Duarte', r: 'Coletivo Luzias (co-vereança)', img: 'images/sp/suzane-duarte.jpg' }, { n: 'Glaucon Durães', r: 'Coletivo Luzias (co-vereança)', img: 'images/sp/glaucon-duraes.jpg' }],
+      p5: [{ n: 'Ciano Pina Vaz', r: 'Observatório Social de Belo Horizonte e Brumadinho', img: 'images/sp/ciano-pina-vaz.jpg' }, { n: 'Isabele Batista Mitozo', r: 'UFMG', img: 'images/sp/isabele-mitozo.jpg' }],
+      p6: [{ n: 'Lorena Tavares', r: 'Professora da UFMG', img: 'images/sp/lorena-tavares.jpg' }, { n: 'Iza Lourença', r: 'Vereadora (CMBH)', img: 'images/sp/iza-lourenca.jpg' }],
+      p7: [{ n: 'Gabriela Luiza Soares Miranda', r: 'Assessora de Comunicação Social na CGE-MG', img: 'images/sp/gabriela-miranda.jpg' }, { n: 'Maria Fernanda Salcedo Repolês', r: 'Polos de Cidadania', img: 'images/sp/maria-fernanda.jpg' }, { n: 'Carla Bronzo', r: 'Professora e pesquisadora da FJP', img: 'images/sp/carla-bronzo.jpg' }, { n: 'Mauro Cabano', r: 'Especialista em juventudes, ex-coordenador de políticas públicas para juventude da PBH', img: 'images/sp/mauro-cabano.jpg' }]
+    };
+    var PM = {
+      p1: { k: 1, t: 'Polarização e desconfiança da população nas instituições', w: 'Sex 06 · 19h30' },
+      p2: { k: 2, t: 'Orçamento e finanças públicas', w: 'Sáb 07 · 8h30' },
+      p3: { k: 3, t: 'Governança transparente e integridade pública nos municípios', w: 'Sáb 07 · 10h30' },
+      p4: { k: 4, t: 'Representação popular na formulação de políticas públicas', w: 'Sáb 07 · 14h' },
+      p5: { k: 5, t: 'Experiência e democracia digital', w: 'Sáb 07 · 16h30' },
+      p6: { k: 6, t: 'Fake news como instrumento de poder nas eleições', w: 'Dom 08 · 10h' },
+      p7: { k: 7, t: 'Reconstrução da confiança entre Estado e Sociedade', w: 'Dom 08 · 11h30' }
+    };
+    var slug = function (n) { return n.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-'); };
+    var focusSp = function (id) {
+      self.holdUntil = Date.now() + 9000;
+      self.setState({ spf: 0, hl: id });
+      clearTimeout(self.hlT);
+      self.hlT = setTimeout(function () { self.setState({ hl: '' }); }, 2600);
+      setTimeout(function () {
+        var sec = document.getElementById('palestrantes');
+        if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        var tr = document.querySelector('[data-track]');
+        var el = tr && tr.querySelector('[data-sp="' + id + '"]');
+        if (tr && el) { self.holdUntil = Date.now() + 3500; self.tweenTo = el.offsetLeft - tr.offsetLeft - 4; }
+      }, 60);
+    };
+    var tones = ['background: #005A6E; color: #ACEAEE', 'background: #02646C; color: #E8FDFF', 'background: #ACEAEE; color: #003139', 'background: #00A3B3; color: #003139'];
+    var speakers = [], si = 0;
+    Object.keys(PM).forEach(function (id) {
+      P[id].forEach(function (p) {
+        var m = PM[id], i = si++;
+        if (st.spf && st.spf !== m.k) return;
+        var ini = p.n.split(' ').filter(function (w) { return w.length > 2; });
+        ini = (ini[0] || p.n)[0] + (ini.length > 1 ? ini[ini.length - 1][0] : '');
+        speakers.push({ id: slug(p.n), cls: st.hl === slug(p.n) ? 'hl' : '', n: p.n, r: p.r, img: p.img || '', noImg: !p.img, ini: ini, avStyle: tones[i % 4], tag: 'PAINEL ' + m.k + ' · ' + m.w.toUpperCase(), panel: m.t });
+      });
+    });
+    var spFilters = [{ k: 0, label: 'Todos' }].concat(Object.keys(PM).map(function (id) { return { k: PM[id].k, label: 'Painel ' + PM[id].k }; })).map(function (f) {
+      return { label: f.label, cls: st.spf === f.k ? 'on' : '', sel: st.spf === f.k ? 'true' : 'false', pick: function () {
+        self.setState({ spf: f.k, ci: 0 });
+        self.carPos = 0; self.tweenTo = null;
+        var tr = document.querySelector('[data-track]'); if (tr) tr.scrollLeft = 0;
+      } };
+    });
+    var nSp = speakers.length;
+    if (!st.spf) speakers = speakers.concat(speakers.map(function (s) { return Object.assign({}, s, { id: s.id + '-b' }); }));
+    var step = function () {
+      var tr = document.querySelector('[data-track]'); if (!tr) return null;
+      var c = tr.querySelector('.spk'); return { tr: tr, w: c ? c.getBoundingClientRect().width + 18 : 260 };
+    };
+    var go = function (d) {
+      var s = step(); if (!s) return;
+      var base = self.tweenTo != null ? self.tweenTo : s.tr.scrollLeft;
+      var target = Math.round((base + d * s.w) / s.w) * s.w;
+      if (!self.state.spf) {
+        var half = s.tr.scrollWidth / 2;
+        if (target < 0) { self.carPos = (self.carPos || 0) + half; target += half; }
+      } else {
+        var max = s.tr.scrollWidth - s.tr.clientWidth;
+        if (target > max + 4) target = 0; else if (target < -4) target = max;
+      }
+      self.tweenTo = target;
+    };
+    self.carGo = go;
+    var ci = Math.min(st.ci, Math.max(nSp - 1, 0));
+    var pad2 = function (n) { return (n < 10 ? '0' : '') + n; };
+    var D = [
+      { label: 'Sexta 06', num: '06', full: 'Sexta-feira · Dia 1', slots: [
+        { t: '18h', title: 'Credenciamento' },
+        { t: '19h', title: 'Cerimônia de Abertura', who: 'Com a Presidência do Em Público' },
+        { t: '19h30', kind: 'Painel 1', title: 'Polarização e desconfiança da população nas instituições', id: 'p1' }
+      ] },
+      { label: 'Sábado 07', num: '07', full: 'Sábado · Dia 2', slots: [
+        { t: '8h30', title: 'Credenciamento' },
+        { t: '8h30–10h30', kind: 'Painel 2', title: 'Orçamento e finanças públicas: do planejamento às ações governamentais', id: 'p2' },
+        { t: '10h30–12h', kind: 'Painel 3', title: 'Governança transparente e responsabilidade social: do controle à integridade pública nos municípios', id: 'p3' },
+        { t: '12h–13h30', title: 'Almoço' },
+        { t: '14h–15h30', kind: 'Painel 4', title: 'Expansão, desafios e limitações da representação popular na formulação de políticas públicas', id: 'p4' },
+        { t: '15h30–16h', title: 'Coffee break' },
+        { t: '16h', title: 'Empresas Juniores e patrocinadores' },
+        { t: '16h30–19h', kind: 'Painel 5', title: 'Experiência e democracia digital: traduzindo dados em participação', id: 'p5' }
+      ] },
+      { label: 'Domingo 08', num: '08', full: 'Domingo · Dia 3', slots: [
+        { t: '9h30', title: 'Credenciamento' },
+        { t: '10h–11h', kind: 'Painel 6', title: 'O uso estratégico das fake news como instrumento de poder e conquista de votos nas eleições', id: 'p6' },
+        { t: '11h–11h30', title: 'Coffee break' },
+        { t: '11h30–13h', kind: 'Painel 7', title: 'Caminhos para a reconstrução da confiança entre Estado e Sociedade', id: 'p7' },
+        { t: '13h30–14h30', title: 'Almoço' },
+        { t: '15h–15h30', kind: 'Grupos de Trabalho', title: 'GT 1 e GT 2' },
+        { t: '16h–17h', kind: 'Grupos de Trabalho', title: 'GT 3 e GT 4' },
+        { t: '17h30–18h', title: 'Mesa de Encerramento e Destaque Acadêmico', who: 'Com a Presidência e a Diretoria Acadêmica' },
+        { t: '18h30', title: 'Encerramento' }
+      ] }
+    ];
+    var days = D.map(function (d, i) {
+      return { label: d.label, cls: i === st.day ? 'on' : '', sel: i === st.day ? 'true' : 'false', pick: function () { self.setState({ day: i, openP: null }); } };
+    });
+    var cur = D[st.day];
+    var shownDays = [{ num: cur.num, full: cur.full, slots: cur.slots.map(function (s) {
+      var sp = s.id ? P[s.id] : null, open = !!sp && st.openP === s.id;
+      return { t: s.t, kind: s.kind || '', title: s.title, who: s.who || '', hasSp: !!sp, sp: (sp || []).map(function (p) { return { n: p.n, r: p.r, go: function () { focusSp(slug(p.n)); } }; }), open: open, exp: open ? 'true' : 'false', chev: open ? 'up' : '',
+        btn: open ? 'Ocultar palestrantes' : 'Ver palestrantes (' + (sp ? sp.length : 0) + ')',
+        toggle: function () { self.setState({ openP: open ? null : s.id }); } };
+    }) }];
+
+    var C = {
+      joao: { n: 'João Viotti', img: 'images/joao.jpg', b: 'Bacharel em Gestão Pública pela UFMG e mestrando em Ciência Política pela mesma universidade. Bolsista voluntário do CIAPSoc/UFMG e membro do INCT-QualiGov. Pesquisa avaliação de políticas públicas, capacidades estatais, orçamento público e políticas educacionais em governos subnacionais.' },
+      samara: { n: 'Samara Chagas de Carvalho', img: 'images/samara.jpg', b: 'Bacharel em Gestão Pública e mestranda em Ciência Política pela UFMG. Pesquisadora discente do CIAPSOC/UFMG e do INCT-QualiGov.' },
+      lais: { n: 'Laís Barreto', img: 'images/lais.jpg', b: 'Mestra em Direito pela UFMG, especialista em Direito Constitucional pela PUC Minas e bacharela em Direito pela UEMG. Integrante do Núcleo de Pesquisa em Estudos Constitucionais (Nupec) e editora na Revista Algoritmos & Sociedade.' },
+      diego: { n: 'Diego Casemiro', img: 'images/diego.jpg', b: 'Mestrando em Direito pela UFMG e bolsista do CNPq. Especialista em Direito Público e em Direito Processual Civil pela PUC Minas. Bacharel em Direito e em Humanidades pela UFSB. Pesquisador extensionista do Prunart/UFMG e integrante do GTD/UFMG.' },
+      roberto: { n: 'Roberto Vasconcelos Novaes', img: 'images/roberto.jpg', b: 'Bacharel, mestre e doutor em Filosofia do Direito pela UFMG, onde é professor adjunto e coordenador do curso de Ciências do Estado. Atua na interseção entre Direito, Ciência da Computação, Sistemas de Informação e Teoria do Estado.' },
+      felipe: { n: 'Felipe Adão', img: 'images/felipe.jpg', b: 'Professor de Teoria e Ciências do Estado na Faculdade de Direito da UFMG. Doutor e mestre em Ciência Política pela UNICAMP. Foi pesquisador visitante no Cluster SCRIPTS da Freie Universität Berlin, com pesquisas sobre direitos humanos, democracia e resiliência democrática.' },
+      nikolas: { n: 'Nikolas Mendes Salvador', img: 'images/nikolas.jpg', b: 'Mestrando em Direito pela UFMG, bacharel em Ciências do Estado (2025) e membro do corpo editorial da Revista de Ciências do Estado (Revice).' },
+      theo: { n: 'Theo Fonseca', img: 'images/theo.jpg', b: 'Mestrando em Direito e bacharel em Ciências do Estado pela UFMG. Editor-Chefe Adjunto da Revice/UFMG e pesquisador do LabP2/UFMG e do Politec/UFMG.' }
+    };
+    var G = [
+      { num: '01', title: 'Orçamento participativo, contingenciamentos e outros desafios na execução contínua de políticas públicas', when: 'Domingo, 15h', desc: 'Estuda orçamento participativo, planejamento, execução orçamentária, contingenciamentos e capacidade estatal, com foco em Minas Gerais, e como a participação social influencia prioridades e a continuidade das políticas.', kw: ['orçamento participativo', 'políticas públicas', 'execução orçamentária', 'participação social', 'capacidade estatal'], co: ['joao', 'samara'] },
+      { num: '02', title: 'Legitimidade democrática em contextos de desigualdade social e fragilidade de direitos', when: 'Domingo, 15h', desc: 'Analisa como desigualdades econômicas, sociais, territoriais e políticas afetam a relação entre cidadãos e instituições, com atenção a municípios e regiões de Minas Gerais, incluindo desconfiança institucional, polarização e representação.', kw: ['legitimidade democrática', 'desigualdade social', 'direitos fundamentais', 'cidadania', 'confiança institucional'], co: ['lais', 'diego'] },
+      { num: '03', title: 'Transparência, integração dos mecanismos de controle e acesso à governança digital', when: 'Domingo, 16h', desc: 'Trata de transparência ativa e passiva, dados públicos, controle social, accountability e governo aberto, considerando o potencial da digitalização e seus limites, como a desigualdade de acesso e a qualidade dos dados.', kw: ['transparência pública', 'governança digital', 'accountability', 'controle social', 'governo aberto'], co: ['roberto'] },
+      { num: '04', title: 'Fortalecimento institucional e inovações em governança colaborativa', when: 'Domingo, 16h', badge: 'Remoto e gratuito', desc: 'Estuda a cooperação entre governo, sociedade civil, setor privado e universidades: governança em rede, coprodução de políticas, parcerias e inovação institucional, com atenção a experiências de Minas Gerais e de outros estados.', kw: ['governança colaborativa', 'fortalecimento institucional', 'inovação governamental', 'Estado em rede', 'cooperação'], co: ['felipe', 'nikolas', 'theo'] }
+    ];
+    var gts = G.map(function (g, i) {
+      var open = st.gt === i;
+      return { num: g.num, title: g.title, when: g.when, badge: g.badge || '', desc: g.desc, kw: g.kw, co: g.co.map(function (k) { return C[k]; }),
+        open: open, exp: open ? 'true' : 'false', x: open ? 'x' : '', toggle: function () { self.setState({ gt: open ? -1 : i }); } };
+    });
+
+    var F = [
+      { q: 'Quanto custa o ingresso?', a: 'Os lotes começam a partir de R$ 20. A compra é feita pela Cheers, no botão de ingressos.' },
+      { q: 'O evento conta como atividade complementar?', a: 'Sim. Participando do Em Público 2026 você garante 30 horas de atividades complementares.' },
+      { q: 'Onde vai ser?', a: 'Na Fundação João Pinheiro: Alameda das Acácias, 70, bairro São Luiz, Belo Horizonte.' },
+      { q: 'Até quando posso submeter meu trabalho?', a: 'O prazo foi prorrogado até 25 de outubro. O envio é feito pelo e-mail academico@empublico.com, com o assunto “Submissão de Resumos de Artigo - XI EM Público”.' },
+      { q: 'Preciso pagar para apresentar no GT?', a: 'A submissão e a apresentação não têm custo extra, mas a inclusão na programação depende do pagamento da inscrição no evento. Quem quiser apresentar só no dia do seu GT pode pagar a taxa de um dia.' },
+      { q: 'Quem recebe certificado de apresentação?', a: 'Os autores inscritos que apresentarem o trabalho. Todos os autores precisam participar da apresentação, salvo caso de força maior comunicado à Comissão.' },
+      { q: 'Posso apresentar online?', a: 'As apresentações são presenciais, exceto no GT 4, que é remoto e gratuito.' }
+    ];
+    var faqs = F.map(function (f, i) {
+      var open = st.faq === i;
+      return { q: f.q, a: f.a, open: open, exp: open ? 'true' : 'false', x: open ? 'x' : '', toggle: function () { self.setState({ faq: open ? -1 : i }); } };
+    });
+
+    return { intro: st.intro, introCls: st.introOut ? 'out' : '', introHidden: st.introOut ? 'true' : 'false', skipIntro: function () { if (self.endIntro) self.endIntro(); }, speakers: speakers, spFilters: spFilters, carPos: pad2(nSp ? ci + 1 : 0) + ' / ' + pad2(nSp), carBar: 'width: ' + (nSp ? ((ci + 1) / nSp * 100) : 0) + '%', carPrev: function () { go(-1); }, carNext: function () { go(1); }, carPause: function () { self.carPaused = true; }, carResume: function () { self.carPaused = false; }, onCarScroll: function () { var s = step(); if (!s || !nSp) return; var max = s.tr.scrollWidth - s.tr.clientWidth; var i = self.state.spf && max > 0 && s.tr.scrollLeft >= max - 4 ? nSp - 1 : Math.round(s.tr.scrollLeft / s.w) % nSp; if (i !== self.state.ci) self.setState({ ci: i }); }, cd: cd, dl: dl, hours: st.hours, days: days, shownDays: shownDays, gts: gts, faqs: faqs };
+  }
+}
+preact.render(preact.h(Component, {}), document.getElementById('app'));
+</script>
+</body>
+</html>
